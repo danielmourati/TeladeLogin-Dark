@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+body {
+    margin: 0;
+    font-family: "noto sans", sans-serif;
+}
+
+body *{
+    box-sizing: border-box;
+}
+
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background: rgb(41, 21, 51);
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-login > h1 {
+    font-size: 3vw;
+    color: rgb(71, 226, 135);
+}
+
+.right-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    border-radius: 20px;
+    background:rgb(18, 4, 26);
+    box-shadow: 0px 10px 40px #00000058;
+}
+
+.card-login > h1{
+    color: rgb(71, 226, 135);
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfield > input{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(41, 21, 51);
+    box-sizing: border-box;
+    color: aliceblue;
+}
+
+.textfield > label{
+    color: rgb(183, 191, 199);
+    margin-bottom: 10px;
+}
+
+.textfield > input::placeholder{
+    color: rgb(183, 191, 199);
+}
+
+.btn-login{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 15px 0px;
+    margin: 25px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: rgb(18, 4, 26);
+    background: rgb(71, 226, 135);
+    cursor: pointer;    
+}
+
+.btn-login:hover{
+    box-shadow: 0px 10px 40px -12px rgb(25, 133, 70);
+}
+.left-login-img{
+    width: 30vw;
+}
+
+.card-login > p{
+    color: aliceblue;
+    font-size: 11pt;
+}
+
+.card-login > p > a{
+    color: rgb(71, 226, 135);
+    font-size: 11pt;
+    padding-left: 5px;
+    text-decoration: none;
+}
+
+@media (max-width: 950px){
+    .card-login{
+        width: 85%
+    }    
+}
+@media (max-width: 600px){
+    .main-login{
+        display: flex;
+        flex-direction: column;
+    }    
+    .left-login > h1{
+        display: none;
+    }
+    .left-login,.right-login{
+        width: 100%;
+        height: auto;
+    }
+    .left-login-img{
+        width: 50vw;
+    }
+
+}
