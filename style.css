@@ -113,6 +113,9 @@ body *{
     font-size: 11pt;
 }
 
+.card-login > img{
+    width: 5vw;
+}
 .card-login > p > a{
     color: rgb(71, 226, 135);
     font-size: 11pt;
