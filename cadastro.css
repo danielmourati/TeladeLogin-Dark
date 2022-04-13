@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+body {
+    margin: 0;
+    font-family: "noto sans", sans-serif;
+}
+
+body *{
+    box-sizing: border-box;
+}
+.main-cadastro{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background: rgb(41, 21, 51);
+    justify-content: center;
+    align-items: center;
+}
+.left-cadastro{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+}
+.card-left-cadastro{
+    width: 60%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px 0px 0px 10px;
+    background: #47E287;
+}
+.card-left-cadastro > img{
+    width: 15vw;
+}
+.card-left-cadastro > h1,p{
+    color: #12041A;
+}
+.btn-tenho{
+    width: 60%;
+    margin-top: 20px;
+    padding: 10px;
+    background: none;
+    cursor: pointer;
+    border-radius: 6px;
+    border-width: 1px;
+    border-style: outset;
+    border-color: #12041A;
+    text-transform: uppercase;
+    font-size: 10pt;
+    font-weight: 800;
+    font-family: "noto sans", sans-serif;
+    color: #12041A;
+}
+.btn-tenho:hover{
+    background: #12041A;
+    font-weight: 800;
+    font-family: "noto sans", sans-serif;
+    color: #47E287;
+    -webkit-transition: 0.3s ease-out;
+    -moz-transition: 0.3s ease-out;
+    -o-transition: 0.3s ease-out;
+    transition: 0.3s ease-out;
+}
+.right-cadastro{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.card-right-cadastro{
+    width: 60%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 0px 10px 10px 0px;
+    background: #12041A;
+}
+.card-right-cadastro > h1{
+    text-align: center;
+    color: #47E287;
+    font-size: 20pt;
+    line-height: 30px;
+}
+.card-right-cadastro > input::placeholder{
+    color: rgb(235, 236, 238);
+}
+.card-right-cadastro > input{
+    width: 70%;
+    padding: 15px;
+    margin: 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #291533;
+    color: aliceblue;
+    font-size: 9pt;
+    font-family: "noto sans", sans-serif;
+}
+.btn-cadastrar{
+    width: 70%;
+    margin-top: 15px;
+    padding: 10px;
+    background: #47E287;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 12pt;
+    font-weight: 800;
+    font-family: "noto sans", sans-serif;
+    color: #12041A;     
+}
+.btn-cadastrar:hover{
+    box-shadow: 0px 10px 40px -12px rgb(25, 133, 70);
+
+}
